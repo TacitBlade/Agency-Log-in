@@ -38,16 +38,27 @@
 
 ### 3. Run Deployment
 
-**On Windows (PowerShell):**
+**Basic Deployment (HTTP only):**
 ```powershell
+# Windows
 .\deploy.ps1
-```
 
-**On Linux/Mac:**
-```bash
+# Linux/Mac
 chmod +x deploy.sh
 ./deploy.sh
 ```
+
+**Enhanced Deployment with SSL (Recommended):**
+```powershell
+# Windows
+.\deploy-with-ssl.ps1
+
+# Linux/Mac
+chmod +x deploy-with-ssl.sh
+./deploy-with-ssl.sh
+```
+
+> **Note**: For SSL deployment, you need a domain name. See `SSL_SETUP_GUIDE.md` for details.
 
 ### 4. Manual Setup (Alternative)
 
