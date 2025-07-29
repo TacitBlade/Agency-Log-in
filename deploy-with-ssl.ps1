@@ -2,13 +2,13 @@
 # Agency Login App with nginx Reverse Proxy + SSL
 
 # Configuration
-$EC2_HOST = "YOUR_EC2_PUBLIC_IP"
-$DOMAIN_NAME = "yourdomain.com"  # Set this to your actual domain
+$EC2_HOST = "YOUR_EC2_PUBLIC_IP"  # Update this with your actual EC2 IP
+$DOMAIN_NAME = "alphaagency752.com"  # Your Namecheap domain
 $EC2_USER = "ec2-user"
 $KEY_PATH = "./keys/AlphaAgency752.pem"
 $APP_DIR = "/home/ec2-user/agency-login"
 $REPO_URL = "https://github.com/TacitBlade/Agency-Log-in.git"
-$EMAIL = "your-email@example.com"  # For Let's Encrypt notifications
+$EMAIL = "admin@alphaagency752.com"  # Update with your email for SSL notifications
 
 Write-Host "🚀 Starting enhanced deployment to AWS EC2 with SSL..." -ForegroundColor Green
 
