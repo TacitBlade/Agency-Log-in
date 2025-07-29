@@ -1,0 +1,5 @@
+gcloud artifacts repositories create [REPO_NAME] `
+  --repository-format=docker `
+  --location=[REGION]
+  docker build -t [REGION]-docker.pkg.dev/[PROJECT_ID]/[REPO_NAME]/[IMAGE_NAME]:tag .
+docker push [REGION]-docker.pkg.dev/[PROJECT_ID]/[REPO_NAME]/[IMAGE_NAME]:tag
